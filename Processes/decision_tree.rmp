@@ -17,7 +17,7 @@
       </operator>
       <operator activated="false" class="subprocess" compatibility="10.4.000" expanded="true" height="68" name="Store Dataset" width="90" x="45" y="34">
         <process expanded="true">
-          <operator activated="true" class="advanced_file_connectors:read_arff" compatibility="10.4.000" expanded="true" height="68" name="Read ARFF (2)" width="90" x="45" y="34">
+          <operator activated="true" class="advanced_file_connectors:read_arff" compatibility="10.4.000" expanded="true" height="68" name="Read ARFF" width="90" x="45" y="34">
             <parameter key="data_file" value="D:/Workspaces/DM2/Training Dataset.arff"/>
             <parameter key="encoding" value="SYSTEM"/>
             <parameter key="read_not_matching_values_as_missings" value="true"/>
@@ -28,10 +28,10 @@
             <parameter key="grouping_character" value=","/>
             <parameter key="infinity_representation" value=""/>
           </operator>
-          <operator activated="true" class="store" compatibility="10.4.000" expanded="true" height="68" name="Store (2)" width="90" x="179" y="34">
+          <operator activated="true" class="store" compatibility="10.4.000" expanded="true" height="68" name="Store" width="90" x="179" y="34">
             <parameter key="repository_entry" value="Training Dataset"/>
           </operator>
-          <connect from_op="Read ARFF (2)" from_port="output" to_op="Store (2)" to_port="input"/>
+          <connect from_op="Read ARFF" from_port="output" to_op="Store" to_port="input"/>
           <portSpacing port="source_in 1" spacing="0"/>
           <portSpacing port="sink_out 1" spacing="0"/>
         </process>
