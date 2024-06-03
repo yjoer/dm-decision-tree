@@ -29,7 +29,7 @@
             <parameter key="infinity_representation" value=""/>
           </operator>
           <operator activated="true" class="store" compatibility="10.4.000" expanded="true" height="68" name="Store" width="90" x="179" y="34">
-            <parameter key="repository_entry" value="Training Dataset"/>
+            <parameter key="repository_entry" value="../training_dataset"/>
           </operator>
           <connect from_op="Read ARFF" from_port="output" to_op="Store" to_port="input"/>
           <portSpacing port="source_in 1" spacing="0"/>
